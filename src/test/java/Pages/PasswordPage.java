@@ -10,10 +10,10 @@ public class PasswordPage {
     WebDriver driver;
 
     @FindBy (xpath = "//input[@name='password']")
-    WebElement passwordField;
+    private WebElement passwordField;
 
     @FindBy (xpath = "//div[@id='passwordNext']")
-    WebElement nextButton;
+    private WebElement nextButton;
 
     public PasswordPage (WebDriver driver){this.driver = driver;}
 

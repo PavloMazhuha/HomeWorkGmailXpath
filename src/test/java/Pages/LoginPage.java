@@ -8,10 +8,10 @@ import org.openqa.selenium.support.How;
 public class LoginPage {
     WebDriver driver;
     @FindBy (xpath = "//input[@id='identifierId']")
-    WebElement emailField;
+    private WebElement emailField;
 
     @FindBy (xpath = "//div[@id='identifierNext']")
-    WebElement nextButton;
+    private WebElement nextButton;
 
     public LoginPage (WebDriver driver) {this.driver = driver;}
 
