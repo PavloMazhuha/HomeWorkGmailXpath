@@ -32,7 +32,7 @@ public class GmailMainPage {
     @FindBy (xpath = "//div[@tabindex='0' and @role='button' and @act='20']")
     private WebElement refreshButton;
 
-    @FindBy (xpath = "//a[@href='https://mail.google.com/mail/#inbox']")
+    @FindBy (xpath = "//a[contains(@title,'Inbox')]")
     private WebElement inboxLink;
 
     public WebElement getInboxLink() {
