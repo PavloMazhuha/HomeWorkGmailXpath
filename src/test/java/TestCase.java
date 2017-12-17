@@ -35,13 +35,12 @@ public class TestCase {
         gmailMainPage.setBody("body");
         gmailMainPage.clickSendMessageButton();
         gmailMainPage.clickRefreshButton();
+        Driver.waitElement(gmailMainPage.getLinkForTestEmail());
 
-        Assert.assertEquals(gmailMainPage.getFirstCheckBox().isDisplayed(),true);
-        Assert.assertEquals(gmailMainPage.getInboxLink().getText(), "Inbox (1)");
+        Assert.assertEquals(gmailMainPage.getLinkForTestEmail().isDisplayed(),true);
 
-        gmailMainPage.selectCheckBox();
+        gmailMainPage.selectCheckBoxFotTestEmail();
         gmailMainPage.clickDeleteButton();
-        Assert.assertEquals(gmailMainPage.getInboxLink().getText(), "Inbox");
 
     }
 
