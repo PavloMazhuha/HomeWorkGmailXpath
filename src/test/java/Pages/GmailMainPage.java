@@ -35,10 +35,10 @@ public class GmailMainPage {
     @FindBy (xpath = "//div[@role='checkbox']")
     private WebElement firstCheckBox;
 
-    @FindBy (xpath = "//div[@role='button' and @act='10']")
+    @FindBy (xpath = "//div[@aria-label='Delete']")
     private WebElement deleteButton;
 
-    @FindBy (xpath = "//div[@tabindex='0' and @role='button' and @act='20']")
+    @FindBy (xpath = "//div[@title='Refresh']")
     private WebElement refreshButton;
 
     @FindBy (xpath = "//a[@href='https://mail.google.com/mail/#inbox']")
