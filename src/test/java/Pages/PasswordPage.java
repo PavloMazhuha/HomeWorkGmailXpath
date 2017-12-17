@@ -9,10 +9,10 @@ import org.openqa.selenium.support.How;
 public class PasswordPage {
     WebDriver driver;
 
-    @FindBy (how = How.XPATH, xpath = "//input[@name='password']")
+    @FindBy (xpath = "//input[@name='password']")
     WebElement passwordField;
 
-    @FindBy (how = How.XPATH, xpath = "//div[@id='passwordNext']")
+    @FindBy (xpath = "//div[@id='passwordNext']")
     WebElement nextButton;
 
     public PasswordPage (WebDriver driver){this.driver = driver;}
