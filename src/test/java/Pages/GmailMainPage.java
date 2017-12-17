@@ -9,31 +9,31 @@ public class GmailMainPage {
     WebDriver driver;
 
     @FindBy (xpath = "//div[contains(@class, 'T-I-KE') and @role='button']")
-    WebElement sendButton;
+    private WebElement sendButton;
 
     @FindBy (xpath = "//textarea[@name='to']")
-    WebElement recipientEmail;
+    private WebElement recipientEmail;
 
     @FindBy (xpath = "//input[@name='subjectbox']")
-    WebElement subjectBox;
+    private WebElement subjectBox;
 
     @FindBy (xpath = "//div[@role='textbox']")
-    WebElement bodyBox;
+    private WebElement bodyBox;
 
     @FindBy (xpath = "//div[@tabindex='1' and @role='button' and @data-tooltip-delay='800']")
-    WebElement sendMessageButton;
+    private WebElement sendMessageButton;
 
     @FindBy (xpath = "//div[@role='checkbox']")
-    WebElement firstCheckBox;
+    private WebElement firstCheckBox;
 
     @FindBy (xpath = "//div[@role='button' and @act='10']")
-    WebElement deleteButton;
+    private WebElement deleteButton;
 
     @FindBy (xpath = "//div[@tabindex='0' and @role='button' and @act='20']")
-    WebElement refreshButton;
+    private WebElement refreshButton;
 
     @FindBy (xpath = "//a[@href='https://mail.google.com/mail/#inbox']")
-    WebElement inboxLink;
+    private WebElement inboxLink;
 
     public WebElement getInboxLink() {
         return inboxLink;
