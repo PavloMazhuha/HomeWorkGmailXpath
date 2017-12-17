@@ -20,7 +20,7 @@ public class GmailMainPage {
     @FindBy (xpath = "//div[@role='textbox']")
     private WebElement bodyBox;
 
-    @FindBy (xpath = "//div[@tabindex='1' and @role='button' and @data-tooltip-delay='800']")
+    @FindBy (xpath = "//div[contains(@aria-label,'Send')]")
     private WebElement sendMessageButton;
 
     @FindBy (xpath = "//div[@role='checkbox']")
