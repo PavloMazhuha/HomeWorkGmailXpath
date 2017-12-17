@@ -27,9 +27,9 @@ public class TestCase {
         passwordPage.setPassword(TestData.PASSWORD);
         passwordPage.clickNextButton();
 
-        Driver.waitElement(gmailMainPage.getSendButton());
+        Driver.waitElement(gmailMainPage.getOpenNewMessageFormButton());
 
-        gmailMainPage.clickOnSendButton();
+        gmailMainPage.clickOnOpenNewMeggageFormButton();
         gmailMainPage.setRecipientEmail(TestData.LOGIN);
         gmailMainPage.setSubject("subject");
         gmailMainPage.setBody("body");

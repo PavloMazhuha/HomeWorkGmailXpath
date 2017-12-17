@@ -3,13 +3,12 @@ package Pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class GmailMainPage {
     WebDriver driver;
 
     @FindBy (xpath = "//div[contains(@class, 'T-I-KE') and @role='button']")
-    private WebElement sendButton;
+    private WebElement openNewMessageFormButton;
 
     @FindBy (xpath = "//textarea[@name='to']")
     private WebElement recipientEmail;
@@ -39,8 +38,8 @@ public class GmailMainPage {
         return inboxLink;
     }
 
-    public WebElement getSendButton() {
-        return sendButton;
+    public WebElement getOpenNewMessageFormButton() {
+        return openNewMessageFormButton;
     }
 
     public WebElement getFirstCheckBox() {
@@ -49,8 +48,8 @@ public class GmailMainPage {
 
     public GmailMainPage (WebDriver driver) {this.driver = driver;}
 
-    public void clickOnSendButton () {
-        sendButton.click();
+    public void clickOnOpenNewMeggageFormButton() {
+        openNewMessageFormButton.click();
     }
 
     public void setRecipientEmail(String email) {
