@@ -8,6 +8,16 @@ import org.openqa.selenium.support.How;
 public class GmailMainPage {
     WebDriver driver;
 
+    @FindBy (xpath = "//span[@email='test.mazhuha@gmail.com']/ancestor::td/preceding-sibling::td[2]/div")
+    private WebElement checkboxForTestEmail;
+
+    public WebElement getLinkForTestEmail() {
+        return linkForTestEmail;
+    }
+
+    @FindBy (xpath = "//span[@email='test.mazhuha@gmail.com' and not(following-sibling::*)]")
+    private WebElement linkForTestEmail;
+
     @FindBy (xpath = "//div[contains(@class, 'T-I-KE') and @role='button']")
     private WebElement sendButton;
 
@@ -69,8 +79,8 @@ public class GmailMainPage {
         sendMessageButton.click();
     }
 
-    public void selectCheckBox () {
-        firstCheckBox.click();
+    public void selectCheckBoxFotTestEmail() {
+        checkboxForTestEmail.click();
     }
 
     public void clickDeleteButton () {
@@ -80,4 +90,5 @@ public class GmailMainPage {
     public void clickRefreshButton (){
         refreshButton.click();
     }
+
 }
