@@ -31,8 +31,8 @@ public class TestCase {
 
         gmailMainPage.clickOnSendButton();
         gmailMainPage.setRecipientEmail(TestData.LOGIN);
-        gmailMainPage.setSubject();
-        gmailMainPage.setBody();
+        gmailMainPage.setSubject("subject");
+        gmailMainPage.setBody("body");
         gmailMainPage.clickSendMessageButton();
         gmailMainPage.clickRefreshButton();
 
